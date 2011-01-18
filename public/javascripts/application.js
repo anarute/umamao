@@ -4,6 +4,10 @@ $(document).ready(function() {
   if ($("#landing_signup").length > 0 ) {
 	  Utils.clickObject("input#affiliation_submit", signUpAjaxRequest);
   }
+  
+  if ($("#email-help").length > 0) {
+    emailtooltip();
+  };
 	
   $("form.nestedAnswerForm").hide();
   $("#add_comment_form").hide();
